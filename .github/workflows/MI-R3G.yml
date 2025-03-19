@@ -440,7 +440,7 @@ jobs:
     - name : Upload packages
       uses: actions/upload-artifact@master
       with:
-        name: 小米MI-R3G
+        name: MI-R3G
         path: /opt/images
 
     - name: Release
