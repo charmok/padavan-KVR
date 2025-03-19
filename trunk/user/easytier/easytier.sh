@@ -257,8 +257,8 @@ start_core() {
 		fi
 		if [ ! -f /etc/storage/et_machine_id ] ; then 
 			touch /etc/storage/et_machine_id
-			ln -sf /etc/storage/et_machine_id ${bin_path}/et_machine_id
 		fi
+		ln -sf /etc/storage/et_machine_id ${bin_path}/et_machine_id
 		[ "$et_log" = "1" ] && CMD="--console-log-level warn"
 		[ "$et_log" = "2" ] && CMD="--console-log-level info"
 		[ "$et_log" = "3" ] && CMD="--console-log-level debug"
